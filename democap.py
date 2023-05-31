@@ -359,6 +359,11 @@ st.subheader("Scrape YOUTUBE Data Here")
 id = st.sidebar.text_input("channel_id")
 if id:
     st.write("Channel_Name is {}".format(c[0]['Channel_Name']))
+from PIL import Image
+
+image = Image.open("youtube.jpg")
+
+st.image(image, caption='youtube is a video sharing website')
 
 Mongo = st.button(
      label = "Upload to MongoDb"
